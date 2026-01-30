@@ -24,7 +24,6 @@ libft/
 ├── ft_*.c        # One file per function
 ├── libft.h       # Function prototypes and structures
 ├── Makefile
-└── .gitignore
 ```
 
 ---
