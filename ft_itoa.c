@@ -51,7 +51,7 @@ char	*ft_itoa(int n)
 	len = count_digits(nb);
 	if (n < 0)
 		len++;
-	res = (char *)malloc((len + 1) * sizeof(char));
+	res = malloc((len + 1) * sizeof(char));
 	if (!res)
 		return (NULL);
 	res[len] = '\0';

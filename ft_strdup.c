@@ -6,7 +6,7 @@
 /*   By: yvoandri <yvoandri@student.42antananarivo  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 09:47:57 by yvoandri          #+#    #+#             */
-/*   Updated: 2026/01/29 09:39:53 by yvoandri         ###   ########.fr       */
+/*   Updated: 2026/02/05 07:34:07 by yvoandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strdup(const char *str)
 	if (!res)
 		return (NULL);
 	i = 0;
-	while (i < len + 1)
+	while (i < len)
 	{
 		res[i] = str[i];
 		i++;

@@ -6,24 +6,26 @@
 /*   By: yvoandri <yvoandri@student.42antananarivo  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 10:15:02 by yvoandri          #+#    #+#             */
-/*   Updated: 2026/01/29 14:25:56 by yvoandri         ###   ########.fr       */
+/*   Updated: 2026/01/30 15:55:14 by yvoandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nelem, size_t elsize)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	unsigned char	*ptr;
 	size_t			i;
+	size_t			total;
 
-	if (nelem != 0 && (elsize > INT_MAX / nelem))
+	total = nmemb * size;
+	if (nmemb != 0 && (size > total / nmemb))
 		return (NULL);
-	ptr = malloc((nelem * elsize) * sizeof(char));
+	ptr = malloc((nmemb * size) * sizeof(char));
 	if (!ptr)
 		return (NULL);
 	i = 0;
-	while (i < nelem * elsize)
+	while (i < nmemb * size)
 	{
 		ptr[i] = 0;
 		i++;

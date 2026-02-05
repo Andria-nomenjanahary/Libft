@@ -6,12 +6,11 @@
 /*   By: yvoandri <yvoandri@student.42antananarivo  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:56:09 by yvoandri          #+#    #+#             */
-/*   Updated: 2026/01/26 10:55:01 by yvoandri         ###   ########.fr       */
+/*   Updated: 2026/02/03 07:48:22 by yvoandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static int	check(char c, const char *set)
 {
@@ -58,7 +57,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end--;
 	while (end >= start && check(s1[end], set))
 		end--;
-	res = (char *)malloc((end - start + 2) * sizeof(char));
+	res = malloc((end - start + 2) * sizeof(char));
 	if (!res)
 		return (NULL);
 	copy(res, s1, start, end);

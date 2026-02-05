@@ -6,16 +6,13 @@
 /*   By: yvoandri <yvoandri@student.42antananarivo  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 15:31:13 by yvoandri          #+#    #+#             */
-/*   Updated: 2026/01/20 15:33:18 by yvoandri         ###   ########.fr       */
+/*   Updated: 2026/02/03 09:04:54 by yvoandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-	{
 		c += 32;
-		return (c);
-	}
 	return (c);
 }

@@ -6,7 +6,7 @@
 /*   By: yvoandri <yvoandri@student.42antananarivo  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 11:57:59 by yvoandri          #+#    #+#             */
-/*   Updated: 2026/01/26 08:08:30 by yvoandri         ###   ########.fr       */
+/*   Updated: 2026/01/31 09:52:10 by yvoandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*tab;
 
-	if (!content)
-		return (NULL);
 	tab = (t_list *)malloc(sizeof(t_list));
 	if (!tab)
 		return (NULL);

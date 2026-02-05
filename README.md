@@ -1,4 +1,4 @@
-This project has been created as part of the 42 curriculum by yvoandri.
+*This project has been created as part of the 42 curriculum by yvoandri.*
 
 # Libft
 
@@ -23,7 +23,7 @@ This library will be reused in many future 42 projects.
 libft/
 ├── ft_*.c        # One file per function
 ├── libft.h       # Function prototypes and structures
-├── Makefile
+├── Makefile      # Makefile for the compilation
 ```
 
 ---
@@ -165,9 +165,12 @@ typedef struct s_list
 * ASCII table:
   [https://www.ascii-code.com/](https://www.ascii-code.com/)
 
-* AI:
-  [https://www.chatgpt.com](https://www.chatgpt.com/)
-  AI was used to eplain each functions and their behaviors. It is also helpfull to describe the functions. 
+
+# AI's usages
+
+* AI was used to eplain each functions and their behaviors. 
+* It is also helpfull to describe the functions.
+* Explain the behavior of some indefined functions.
 ---
 
 # Goal of Libft

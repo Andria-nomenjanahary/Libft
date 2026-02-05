@@ -6,16 +6,13 @@
 /*   By: yvoandri <yvoandri@student.42antananarivo  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 15:17:29 by yvoandri          #+#    #+#             */
-/*   Updated: 2026/01/20 15:21:17 by yvoandri         ###   ########.fr       */
+/*   Updated: 2026/02/03 09:05:31 by yvoandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-	{
 		c -= 32;
-		return (c);
-	}
 	return (c);
 }

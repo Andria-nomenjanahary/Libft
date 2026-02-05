@@ -6,7 +6,7 @@
 /*   By: yvoandri <yvoandri@student.42antananarivo  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 08:28:50 by yvoandri          #+#    #+#             */
-/*   Updated: 2026/01/25 11:17:11 by yvoandri         ###   ########.fr       */
+/*   Updated: 2026/02/03 08:28:51 by yvoandri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putendl_fd(char *s, int fd)
 {
 	int	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
 		write (fd, &s[i++], 1);
